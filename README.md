@@ -1,6 +1,14 @@
 # pythuadetector
 Python library for detecting User Agents.
 
+# My user agent is Unknown!
+Go to Issues and put in an issue with this format please:
+```
+User agent: UnknownUserAgent
+Expected output: Browser Name on Platform Name
+Actual output Browser Name/Unknown Browser on Platform Name/Unknown Platform
+```
+
 # Usage
 ```python
 import pythuadetector
