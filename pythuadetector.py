@@ -7,6 +7,10 @@ def uadetect(ua):
         browser = "python-requests"
     elif ("AppleTV" in ua) == True:
         browser = "iTunes"
+    elif ("iTunes" in ua) == True:
+        browser = "iTunes"
+    elif ("wOSBrowser" in ua) == True:
+        platform = "webOS Browser"
     elif ("XBMC" in ua) == True:
         browser = "XBMC"
     elif ("Roblox" in ua) == True:
@@ -19,6 +23,8 @@ def uadetect(ua):
         browser = "Nintendo Browser"
     elif ("Nintendo 3DS" in ua) == True:
         browser = "Netfront Browser NX"
+    elif ("Dalvik" in ua) == True:
+        browser = "Java-based Browser"
     elif ("PlayStation 4" in ua) == True:
         browser = "PlayStation 4 Browser"
     elif ("Wii" in ua) == True:
@@ -31,8 +37,14 @@ def uadetect(ua):
         browser = "NetFront"
     elif ("PLAYSTATION 3" in ua) == True:
         browser = "NetFront"
+    elif ("AOL" in ua) == True:
+        browser = "AOL Browser"
     elif ("SamsungBrowser" in ua) == True:
         browser = "Samsung Browser"
+    elif ("Netscape" in ua) == True:
+        browser = "Netscape Navigator"
+    elif ("Maxthon" in ua) == True:
+        browser = "Maxthon"
     elif ("YaBrowser" in ua) == True:
         browser = "Yandex Browser"
     elif ("Yowser" in ua) == True:
@@ -45,6 +57,8 @@ def uadetect(ua):
         browser = "UCBrowser"
     elif ("UBrowser" in ua) == True:
         browser = "UCBrowser"
+    elif ("Kindle" in ua) == True:
+        browser = "Kindle Browser"
     elif ("IEMobile" in ua) == True:
         browser = "Microsoft IEMobile"
     elif ("Edg" in ua) == True:
@@ -111,6 +125,10 @@ def uadetect(ua):
             platform = "Xbox"
     elif ("CrKey" in ua) == True:
         platform = "Google Chromecast"
+    elif ("CrOS" in ua) == True:
+        platform = "Chrome OS"
+    elif ("Glass" in ua) == True:
+        platform = "Glass OS (Android)"
     elif ("Hudl" in ua) == True:
         platform = "Tesco Hudl (Android)"
     elif ("GoogleTV" in ua) == True:
@@ -125,6 +143,12 @@ def uadetect(ua):
         platform = "PlayStation"
     elif ("Nintendo Game Boy" in ua) == True:
         platform = "Nintendo Switch"
+    elif ("hpwOS" in ua) == True:
+        platform = "HP webOS"
+    elif ("HPwOS" in ua) == True:
+        platform = "HP webOS"
+    elif ("Windows Phone" in ua) == True:
+        platform = "Windows Phone"
     elif ("Windows Mobile" in ua) == True:
         platform = "Windows Mobile"
     elif ("Windows NT 10.0" in ua) == True:
@@ -159,6 +183,20 @@ def uadetect(ua):
         platform = "iPad (iOS)"
     elif ("Mac OS X" in ua) == True:
         platform = "Mac OS X"
+    elif ("Macintosh" in ua) == True:
+        platform = "Mac OS"
+    elif ("Mac PowerPC" in ua) == True:
+        platform = "Mac OS"
+    elif ("Mac_PowerPC" in ua) == True:
+        platform = "Mac OS"
+    elif ("Mac PPC" in ua) == True:
+        platform = "Mac OS"
+    elif ("Mac_PPC" in ua) == True:
+        platform = "Mac OS"
+    elif ("KF" in ua) == True:
+        platform = "Fire OS (Android)"
+    elif ("Kindle" in ua) == True:
+        platform = "Fire OS (Android)"
     elif ("Android" in ua) == True:
         platform = "Android"
     elif ("Linux" in ua) == True:
@@ -177,6 +215,8 @@ def uadetect(ua):
         platform = "Symbian"
     elif ("SymbianOS" in ua) == True:
         platform = "Symbian"
+    elif ("OS X" in ua) == True:
+        platform = "Mac OS X"
     else:
         platform = "Unknown Platform"
     
