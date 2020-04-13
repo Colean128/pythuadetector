@@ -35,6 +35,10 @@ def uadetect(ua):
         browser = "Yandex Browser"
     elif ("Yowser" in ua) == True:
         browser = "Yandex Browser"
+    elif ("S40OviBrowser" in ua) == True:
+        browser = "Nokia Ovi"
+    elif ("UC Browser" in ua) == True:
+        browser = "UCBrowser"
     elif ("UCBrowser" in ua) == True:
         browser = "UCBrowser"
     elif ("UBrowser" in ua) == True:
@@ -157,7 +161,19 @@ def uadetect(ua):
         platform = "Android"
     elif ("Linux" in ua) == True:
         platform = "Linux"
+    elif ("SymbOS" in ua) == True:
+        platform = "Symbian"
+    elif ("S40" in ua) == True:
+        platform = "Symbian"
+    elif ("S60" in ua) == True:
+        platform = "Symbian"
+    elif ("Series40" in ua) == True:
+        platform = "Symbian"
+    elif ("Series60" in ua) == True:
+        platform = "Symbian"
+    elif ("SymbianOS" in ua) == True:
+        platform = "Symbian"
     else:
-        platform = "Unknown platform"
+        platform = "Unknown Platform"
     
     print (browser+" on "+platform)
