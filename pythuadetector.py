@@ -13,8 +13,30 @@ def uadetect(ua):
         platform = "webOS Browser"
     elif ("XBMC" in ua) == True:
         browser = "XBMC"
+    elif ("wget" in ua) == True:
+        browser = "Wget"
+    elif ("Wget" in ua) == True:
+        browser = "Wget"
+    elif ("curl" in ua) == True:
+        browser = "cURL"
+    elif ("cURL" in ua) == True:
+        browser = "cURL"
     elif ("Roblox" in ua) == True:
         browser = "Roblox"
+    elif ("Windows-Media-Player" in ua) == True:
+        browser = "Windows Media Player"
+    elif ("WinHTTP" in ua) == True:
+        browser = "Microsoft Windows HTTP Services"
+    elif ("WindowsPowerShell" in ua) == True:
+        browser = "Windows Power Shell"
+    elif ("Tesla" in ua) == True:
+        browser = "Tesla Browser"
+    elif ("QtCarBrowser" in ua) == True:
+        browser = "Tesla Browser"
+    elif ("FBIOS" in ua) == True:
+        browser = "Facebook App"
+    elif ("FB_IAB" in ua) == True:
+        browser = "Facebook App"
     elif ("Nitro" in ua) == True:
         browser = "Nintendo DS Browser"
     elif ("Nintendo DS" in ua) == True:
@@ -177,6 +199,10 @@ def uadetect(ua):
         platform = "Microsoft Windows 3.1"
     elif ("Windows" in ua) == True:
         platform = "Microsoft Windows"
+    elif ("mingw" in ua) == True:
+        platform = "Microsoft Windows"
+    elif ("iPod" in ua) == True:
+        platform = "iPod touch (iOS)"
     elif ("iPhone" in ua) == True:
         platform = "iPhone (iOS)"
     elif ("iPad" in ua) == True:
@@ -199,9 +225,13 @@ def uadetect(ua):
         platform = "Fire OS (Android)"
     elif ("Kindle" in ua) == True:
         platform = "Fire OS (Android)"
+    elif ("Tesla" in ua) == True:
+        platform = "Tesla Car"
     elif ("Android" in ua) == True:
         platform = "Android"
     elif ("Linux" in ua) == True:
+        platform = "Linux"
+    elif ("linux" in ua) == True:
         platform = "Linux"
     elif ("SymbOS" in ua) == True:
         platform = "Symbian"
