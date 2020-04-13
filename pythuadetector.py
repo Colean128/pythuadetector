@@ -71,14 +71,16 @@ def uadetect(ua):
         browser = "Google Chrome"
     elif ("CriOS" in ua) == True:
         browser = "Google Chrome"
-    elif ("Safari" in ua) == True:
-        browser = "Safari"
     elif ("MSIE" in ua) == True:
         browser = "Microsoft Internet Explorer"
     elif ("Trident" in ua) == True:
         browser = "Microsoft Internet Explorer"
     elif ("Opera" in ua) == True:
         browser = "Opera"
+    elif ("BlackBerry" in ua) == True:
+        browser = "BlackBerry Browser"
+    elif ("Safari" in ua) == True:
+        browser = "Safari"
     else:
         browser = "Unknown Browser"
 
@@ -175,12 +177,12 @@ def uadetect(ua):
         platform = "Microsoft Windows 3.1"
     elif ("Windows" in ua) == True:
         platform = "Microsoft Windows"
-    elif ("iOS" in ua) == True:
-        platform = "iOS"
     elif ("iPhone" in ua) == True:
         platform = "iPhone (iOS)"
     elif ("iPad" in ua) == True:
         platform = "iPad (iOS)"
+    elif ("iOS" in ua) == True:
+        platform = "iOS"
     elif ("Mac OS X" in ua) == True:
         platform = "Mac OS X"
     elif ("Macintosh" in ua) == True:
@@ -217,6 +219,8 @@ def uadetect(ua):
         platform = "Symbian"
     elif ("OS X" in ua) == True:
         platform = "Mac OS X"
+    elif ("BlackBerry" in ua) == True:
+        platform = "BlackBerry OS"
     else:
         platform = "Unknown Platform"
     
