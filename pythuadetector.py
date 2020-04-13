@@ -23,6 +23,8 @@ def uadetect(ua):
         browser = "PlayStation 4 Browser"
     elif ("Wii" in ua) == True:
         browser = "Internet Channel"
+    elif ("NokiaBrowser" in ua) == True:
+        browser = "Nokia Browser"
     elif ("PlayStation Vita" in ua) == True:
         browser = "Silk"
     elif ("PlayStation Portable" in ua) == True:
@@ -36,7 +38,7 @@ def uadetect(ua):
     elif ("Yowser" in ua) == True:
         browser = "Yandex Browser"
     elif ("S40OviBrowser" in ua) == True:
-        browser = "Nokia Ovi"
+        browser = "Ovi"
     elif ("UC Browser" in ua) == True:
         browser = "UCBrowser"
     elif ("UCBrowser" in ua) == True:
@@ -166,6 +168,8 @@ def uadetect(ua):
     elif ("S40" in ua) == True:
         platform = "Symbian"
     elif ("S60" in ua) == True:
+        platform = "Symbian"
+    elif ("Series30" in ua) == True:
         platform = "Symbian"
     elif ("Series40" in ua) == True:
         platform = "Symbian"
